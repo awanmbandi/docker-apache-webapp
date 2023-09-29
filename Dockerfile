@@ -2,7 +2,7 @@
 #      Dockerfile - 2: Add the below to Dockerfile - 3         #
 ################################################################
 FROM centos:centos7
-RUN yum update
+# RUN yum update
 RUN yum -y install httpd
 # Add/Copy all the files in the current Directory where you're running this/Dockerfile location to /var/www/html 
 ADD . /var/www/html 
